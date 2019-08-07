@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Table to show the employee list</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+  </head>
+
+  <body>
+  
+  <form action="#" th:action="@{/employees/save}" th:object="${employee}" method="POST">
+  
+ 	<input type="text" th:field="*{firstName}" placeholder="First name" class="form-control mb-4 col-4"/>
+   
+   	<input type="text" th:field="*{lastName}" placeholder="Last name" class="form-control mb-4 col-4"/>
+  
+   	<input type="text" th:field="*{email}" placeholder="Email" class="form-control mb-4 col-4"/>
+  
+  	<button type="submit" class="btn btn-info col-2">save</button>
+  </form>
+  
+  </body>
+  </html>
