@@ -2,7 +2,7 @@
 
 Development Process:
 
-1. Create a starter project with the dependencied: Web, Thymeleaf Devtools, mysql, JPA
+1. Create a starter project with the dependencies: Web, Thymeleaf Devtools, mysql, JPA
 
 2. Create an EmployeeController
 
